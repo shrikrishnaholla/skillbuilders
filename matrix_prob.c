@@ -46,9 +46,9 @@ void connect(int i, int j, int count) {
         return;
     }
 
-    else if (matrix[i+1][j] && matrix[i][j+1]) 
-    {
-        connect(i+1,j,count+1);
+    else if (matrix[i+1][j] && matrix[i][j+1]) // If there is a choice to make, take one of the paths,
+    {                                          // traverse till the end, update maxConnections if necessary,
+        connect(i+1,j,count+1);                // then backtrack, make the next choice and do the same
         connect(i,j+1,count+1);
     }
 
