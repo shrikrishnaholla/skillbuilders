@@ -21,7 +21,7 @@ void connect(int, int, int);
 int main(int argc, char const *argv[])
 {
     int i, j, n ;
-    printf("Enter the order of the matrix\n");
+    printf("Enter the order of the matrix (Assume square)\n"); // Can be easily changed to rectangular too
     scanf("%d", &n);
     printf("Enter a matrix of order %d\n", n);
     for (i = 0; i < n; i++)
