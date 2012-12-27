@@ -31,10 +31,10 @@ int main(int argc, char const *argv[])
             break;
         }
     }
-    for (j = 0; j < n; ++j)
-    {
-        if (matrix[i-1][j][0] == el)
-        {
+    for (j = 0; j < n; ++j)                                // Theory: since the array is sorted in all directions
+    {                                                      // we need only search between the last element in the
+        if (matrix[i-1][j][0] == el)                       // previous dimension that was lesser than the search
+        {                                                  // element
             printf("Element found at (%d,%d,%d)\n", i-1,j,0);
             return 0;
         }
