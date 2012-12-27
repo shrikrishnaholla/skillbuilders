@@ -26,10 +26,8 @@ int main(int argc, char const *argv[])
         }
         else if (matrix[i][0][0] < el)
             continue;
-        else {
-            printf("%d > el\n", matrix[i][0][0] );
+        else
             break;
-        }
     }
     for (j = 0; j < n; ++j)                                // Theory: since the array is sorted in all directions
     {                                                      // we need only search between the last element in the
@@ -40,10 +38,8 @@ int main(int argc, char const *argv[])
         }
         else if (matrix[i-1][j][0] < el)
             continue;
-        else {
-            printf("%d > el\n", matrix[i-1][j][0]);
+        else
             break;
-        }
     }
     for (k = 0; k < n; ++k)
     {
@@ -54,10 +50,8 @@ int main(int argc, char const *argv[])
         }
         else if (matrix[i-1][j-1][k] < el)
             continue;
-        else {
-            printf("%d > el\n", matrix[i-1][j-1][k]);
+        else 
             break;
-        }
     }
     printf("%d not found in the 3D array\n", el);
 
